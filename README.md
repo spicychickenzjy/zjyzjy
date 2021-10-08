@@ -37,7 +37,7 @@ Then build resnet on the basis of blocks, and perform 4 blocks after a layer of 
         return result
 ```
 
-![image](https://github.com/spicychickenzjy/zjyzjy/image/flow.png)
+![image](https://github.com/spicychickenzjy/zjyzjy/tree/main/image/flow.png)
 
 Since the computer does not have a cuda environment, here is torch.device('cpu'). The optimization method is adam. Due to the limitation of the CPU speed, set 5 epochs, then calculate the gradient and update parameters of the backpropagation, and print the batch and Iterative loss 
 ```
