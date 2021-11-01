@@ -52,3 +52,28 @@ Finally, make a prediction. Because the batch_size is set to 30 and there are 10
 
 ---
 
+When batch_size is 32
+
+ learning rate  | epoch  | accuracy
+ ---- | ----- | ------  
+ 0.0005  | 30 | 68.943% 
+ 0.0005  | 60 | 70.422%
+ 0.0001  | 30 | 77.254% 
+ 0.0001  | 60 | 77.343%
+ 0.00005  | 30 | 75.747% 
+ 0.00005  | 60 | 75.875%
+ 
+ 
+ When batch_size is 64
+ 
+  learning rate  | epoch  | accuracy
+ ---- | ----- | ------  
+ 0.0005  | 30 | 73.653% 
+ 0.0005  | 60 | 73.611%
+ 0.0001  | 30 | 76.319% 
+ 0.0001  | 60 | 76.623%
+ 0.00005  | 30 | 75.357% 
+ 0.00005  | 60 | 75.525%
+ 
+ 
+On the whole, when the batch_size is set to 32, the learning rate is the best when the learning rate is 0.0001. The higher the epoch, the higher the accuracy, but the improvement is not obvious; when the batch_size is set to 64, the accuracy is still the highest at 0.0001. The higher the epoch, the higher the accuracy, but the improvement is not very obvious 
